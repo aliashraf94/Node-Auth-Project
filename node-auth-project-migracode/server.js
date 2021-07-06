@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+const user = require("./routes/user");
 
 // initializing express application
 const app = express();
@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to MigraCode Auth application." });
 });
 
+app.use("/user", user);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 4000;
