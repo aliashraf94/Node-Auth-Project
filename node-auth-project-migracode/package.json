@@ -4,7 +4,7 @@
   "description": "Authentication using JWT in REST API",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "ali",
   "license": "ISC",
